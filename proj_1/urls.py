@@ -1,8 +1,8 @@
 from django.conf.urls import url
 from . import views
 
-app_name = "proj_1"
 
 urlpatterns = [
-    url(r'^$', views.index, name="index")
+    url(r'^$', views.homeView.as_view(), name="index"),
+    url(r'^home/', views.index, name='home')
 ]
