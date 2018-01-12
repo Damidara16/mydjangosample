@@ -3,8 +3,9 @@ from django.views.generic.base import TemplateView
 
 # Create your views here.
 def index(request):
-    return render(request, 'proj_1/home.html')
+    title = "My Life"
+    return render(request, 'proj_1/client.html', {"title": title})
 
-class homeView(TemplateView):
-
-    template_name = "proj_1/index.html"
+def home(request):
+    title = "test code"
+    return render(request, 'proj_1/home.html', {"title": title})

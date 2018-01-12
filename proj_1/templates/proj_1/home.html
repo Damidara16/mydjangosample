@@ -1,24 +1,17 @@
 <html>
-<title>index function</title>
+  <title>{{title}}</title>
+  <body>
+    <h1>hey yall</h1>
+    {% load staticfiles %}
+    <p id='demo'></p>
+    <p id="demoo"></p>
 
-<h1>hey yall</h1>
 
-<p id='demo'></p>
+    <h2>My First Web Page</h2>
+    <p>My First Paragraph.</p>
 
-<script>
-document.getElementById('demo').innerHTML = "red car";
-</script>
-
-<body>
-
-<h2>My First Web Page</h2>
-<p>My First Paragraph.</p>
-
-<p id="demoo"></p>
-
-<script>
-document.getElementById("demoo").innerHTML = 5 + 6;
-</script>
-
-</body>
+    <!-- ANY JS CODE HAS TO BE ON TOP OF THE JS CALL OR ELSE I HAVE TO CALL IT AGAIN. -->
+    <!--LOADSTATIC GOES AT THE TOP. ALSO THE STATIC IN THE URL IS CALL THE 'STATIC' FOLDER, JUST LIKE TEMPLATE-->
+    <script src="{% static 'proj_1/app.js' %}"></script>
+  </body>
 </html>
