@@ -26,7 +26,8 @@ switch(dayNum){
 }
 document.getElementById("dateQuote").innerHTML = text
 
-
+/*
+BROKEN CODE
 function Person(fName, lName, age){
   this.firstName = fName
   this.lastName = lName
@@ -40,7 +41,9 @@ function nameFunc(){
   var lname = document.getElementById("lname");
   var name = fname + " " + lname
   var f = document.createElement('h1');
-  var k = document.createTextNode('fname');
-  f.appendChild(k);
+  //var k = document.createTextNode('fname');
+  //f.appendChild(k);
+  f.id = 'kop';
+  document.getElementById('kop').innerHTML = djoo;
   document.body.appendChild(f);
-}
+}*/

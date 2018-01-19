@@ -12,11 +12,17 @@
     <input id="lname", placeholder="last Name"></input>
     <input id="age", placeholder="age"></input>
     <button onclick="nameFunc()">Tell Us</button>
+    <p id="kop"></p>
+    <br>
+    <h1>contact form</h1>
+    <form method="post">
+      {% csrf_token %}
+      {{form.as_p}}
+      <button type='submit'>Get in Contact</button>
+    </form>
 
 
-    <!--ADD try and catch STATEMENT
-        ADD an object constructor
-        add an element that is effect by at least 5 events
+    <!--
         add contact form-->
     <h2>My First Web Page</h2>
     <p>My First Paragraph.</p>
